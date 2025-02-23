@@ -1,0 +1,16 @@
+Frontend
+- react: library for frontend UI, JSX-javascript syntax extension; html-like code within JS
+- css: beautification
+Backend
+- nodejs: handle user HTTP requests and database communication
+- expressjs: provides more readable and maintainable code, simplifies building web apps
+APIs
+- HTTP: request todolist data with HTTP GET or post todolist data with HTTP POST
+Hosting
+- Firebase: host web page
+- Heroku: host backend
+Databases
+- MongoDB (not installed yet): store user information + todolist info
+Libraries
+- node-cron (not installed yet): schedules tasks in nodejs apps, backend taks scheduling
+- react-toastify (not installed yet): displays notifications in react apps

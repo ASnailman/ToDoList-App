@@ -1,0 +1,22 @@
+npm init -y
+    initializes new npm project by making a package.json file, -y flag says yes to all options
+npm install -g npm
+    "-g" flag stands for global, command installs specified package globally on system, 
+    making it accessible from CLI, rather than just project directory
+npm cache clean
+    delete all data out of the cache folder, which is used to store 
+    local copies of downloaded packages to speed up future installations,
+    useful for ensuring that packages are installed from latest versions
+npm audit fix
+    automatically fix vulnerabilities in project dependencies
+npm (node package manager)
+    install, manage, update projects in node.js projects
+    install globally
+npx (node package executor)
+    executes packages from npm registry without installing them globally
+package.json   
+    metadata about project (name, version, description, dependencies)
+    used by npm to install dependencies
+package-lock.json   
+    lock down the exact versions of dependencies
+    ensures reproducible builds by providing snapshot of the entire dependency tree
