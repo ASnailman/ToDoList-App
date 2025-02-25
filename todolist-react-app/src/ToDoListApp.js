@@ -1,5 +1,6 @@
 import './ToDoListApp.css';
-import { AddTask } from './ToDoListFunctions';
+import Dropdown from './components/Dropdown'; //Default Export: since I used "export default Dropdown", no curly brackets
+import { AddTask } from './components/ToDoListFunctions'; //Named Export: used "export function AddTask(), needs curly brackets"
 
 function App() {
   return (
@@ -9,7 +10,9 @@ function App() {
       </header>
       <div className='Add-Task'>
         <AddTask />
+        <Dropdown />
       </div>
+    
     </div>
   );
 }

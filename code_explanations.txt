@@ -1,0 +1,2 @@
+Use default export ("export default") when there's only one thing needed to export
+Use named exports ("export function or export const") when there are multiple exports 
