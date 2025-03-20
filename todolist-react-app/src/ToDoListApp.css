@@ -15,24 +15,24 @@
 
 .Add-Task {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 10px;
+  padding-top: 30px;
   background-color: rgb(158, 222, 200);
-  max-width: 100%;
 }
 
 .Add-Task button {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: 10px;
+  /* margin: 10px; */
   font-size: large;
 }
 
 .Add-Task button:hover {
-  background-color: rgb(252, 255, 179);
+  background-color: #ddd;
 }
 
 .Add-Task input {
@@ -40,11 +40,12 @@
   border-radius: 5px;
   cursor: text;
   font-size: large;
+  margin-right: 5px;
 }
 
 .Add-Task ul {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  width: 100%;
+  /* width: 100%; */
   font-size: large;
   padding: 0;
   list-style: disc inside;

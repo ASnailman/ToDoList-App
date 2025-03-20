@@ -1,8 +1,15 @@
 import './ToDoListApp.css';
-import Dropdown from './components/Dropdown'; //Default Export: since I used "export default Dropdown", no curly brackets
 import { AddTask } from './components/ToDoListFunctions'; //Named Export: used "export function AddTask(), needs curly brackets"
+import './components/SlidingPanel.js';
+import { useState } from 'react';
 
 function App() {
+
+  const [isPanelVisible, setIsPanelVisible] = useState(false);
+  const togglePanel = () => {
+      setIsPanelVisible(!isPanelVisible);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -10,9 +17,12 @@ function App() {
       </header>
       <div className='Add-Task'>
         <AddTask />
-        <Dropdown />
       </div>
-    
+  
+      <div className='Add-Task'>
+          <button onClick={togglePanel}>Toggle Sliding Panel</button>
+          <sliding-panel visible={isPanelVisible}></sliding-panel>
+      </div>
     </div>
   );
 }

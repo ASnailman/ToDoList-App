@@ -1,11 +1,13 @@
 .dropdown {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 200px;
+    width: 100px;
+    max-width:100%;
     position: relative;
     border-radius: 5px;
     align-self: center;
+    font-size: large;
+    margin-right: 5px;
 }
 
 .dropdown .options {
@@ -13,7 +15,7 @@
     top: 100%;
     width: 100%;
     display: flex;
-    max-width: 200px;
+    max-width: max-content;
     flex-direction: column;
     opacity: 0;
     visibility: hidden;
@@ -22,6 +24,11 @@
 .dropdown .options.visible {
     opacity: 1;
     visibility: visible;
+}
+
+.dropdown .toggle {
+    height: 37px;
+    box-sizing: border-box;
 }
 
 dropdown .toggle, .dropdown .options button {
