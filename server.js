@@ -36,6 +36,16 @@ async function run() {
             }
         });
 
+        app.get('/get-tasks', async (req, res) => {
+            try {
+                const tasks = await tasksCollection.find({}).toArray();
+                res.status(200).send(tasks);
+            } catch (error) {
+                console.error('Failed to fetch tasks:', error);
+                res.status(500).send({ error: 'Failed to fetch tasks' });
+            }
+        });
+
         // Start the server
         app.listen(port, () => {
             console.log(`Server running on http://localhost:${port}`);
